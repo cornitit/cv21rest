@@ -1,6 +1,7 @@
 package fr.univrouen.cv21rest.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 public class CVController {
 	@GetMapping("/resume")
@@ -10,5 +11,10 @@ public class CVController {
 	@GetMapping("/id")
 	public String getCVinXML() {
 		return"Détail du CV demandé";
+	}
+	@GetMapping("/id")
+	public String getCVinXML(
+		@RequestParam(value = "name") String texte) {
+		return ("Détail du CV demandé : " + texte);
 	}
 }
