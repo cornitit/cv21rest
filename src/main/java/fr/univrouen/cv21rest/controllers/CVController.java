@@ -12,9 +12,9 @@ public class CVController {
 	public String getCVinXML() {
 		return"Détail du CV demandé";
 	}
-	@GetMapping("/id")
+	/*@GetMapping("/id")
 	public String getCVinXML(
 		@RequestParam(value = "name") String texte) {
 		return ("Détail du CV demandé : " + texte);
-	}
+	}*/
 }
