@@ -3,6 +3,6 @@
         "goal": "package"
     },
     "deploy": {
-        "jarName": "build/libs/gs-spring-boot-0.1.0.jar"
+        "jarName": "build/libs/spring-boot-maven-plugin0.1.0.jar"
     }
 }
