@@ -1,8 +1,1 @@
-{
-    "build": {
-        "goal": "package"
-    },
-    "deploy": {
-        "jarName": "build/libs/spring-boot-maven-plugin0.1.0.jar"
-    }
-}
+{  "build": {    "type": "maven",    "goal": "package"  },  "deploy": {    "goal": "spring-boot:run"  }}
