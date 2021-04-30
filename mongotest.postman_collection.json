@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "98602aaf-3aec-4442-a4c5-d5ad843357df",
+		"name": "mongotest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List differents CV",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6039/resume",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6039",
+					"path": [
+						"resume"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create CV",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<p:cv21 xmlns:p=\"http://univ.fr/cv21\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" >\r\n  <p:identitie>\r\n    <genre>M</genre>\r\n    <nom>cornilleau4</nom>\r\n    <prenom>titouan</prenom>\r\n    <tel>0123456789</tel>\r\n    <mel>mail@mail.fr</mel>\r\n  </p:identitie>\r\n  <p:objectif emploi=\"\" stage=\"\"/>\r\n  <p:prof>\r\n    <expe>\r\n      <datedeb>2001-01-01</datedeb>\r\n      <datefin>2001-01-01</datefin>\r\n      <titre>titre3</titre>\r\n    </expe>\r\n  </p:prof>\r\n  <p:competences>\r\n    <diplome niveau=\"\">\r\n      <date>2001-01-01</date>\r\n      <titre>titre</titre>\r\n      <etab>etab</etab>\r\n    </diplome>\r\n    <certif>\r\n      <datedeb>2001-01-01</datedeb>\r\n      <datefin>2001-01-01</datefin>\r\n      <titre>titre</titre>\r\n    </certif>\r\n  </p:competences>\r\n  <p:divers>\r\n    <lv cert=\"\" lang=\"\" nivi=\"0\" nivs=\"\"/>\r\n    <autre comment=\"\" titre=\"\"/>\r\n  </p:divers>\r\n</p:cv21>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6039/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6039",
+					"path": [
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Page Accueil",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "page d'aide",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/help",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"help"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find cv in html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "find cv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Delete cv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "update cv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
