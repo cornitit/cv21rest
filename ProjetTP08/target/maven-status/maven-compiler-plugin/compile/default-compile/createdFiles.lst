@@ -1,0 +1,12 @@
+fr\univrouen\cv21\repository\CVRepository.class
+fr\univrouen\cv21\model\Prof.class
+fr\univrouen\cv21\model\Expe.class
+fr\univrouen\cv21\model\Objectif.class
+fr\univrouen\cv21\model\CV21.class
+fr\univrouen\cv21\model\Competences.class
+fr\univrouen\cv21\model\Divers.class
+fr\univrouen\cv21\model\Identitie.class
+fr\univrouen\cv21\ProjetTp08Application.class
+fr\univrouen\cv21\controller\CVController.class
+fr\univrouen\cv21\model\Certif.class
+fr\univrouen\cv21\model\Diplome.class
