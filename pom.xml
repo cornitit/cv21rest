@@ -91,7 +91,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				
+				<configuration>
+           				 <mainClass>src.main.java.fr.univrouen.cv21.ProjetTp08Application</mainClass>
+        			 </configuration>
 			</plugin>
 		</plugins>
 	</build>
